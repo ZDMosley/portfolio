@@ -1,0 +1,27 @@
+.error{
+    color: red;
+    padding-left: 5px;
+}
+
+.MarsPhoto{
+	display: none
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+.formlabel{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+h1{
+  color: rgb(82, 170, 241);
+}
+
+h2{
+  color: rgb(82, 170, 241);
+}

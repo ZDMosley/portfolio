@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Bruce Bauer">
+    <title>AJAX Unit Conversion</title>
+    <link rel="stylesheet" type="text/css" href="assets/style/unitconversion.css">
+</head>
+<body>
+<form id="myform">
+    <div class="formcontainer">
+        <h1>Javascript Calculator (AJAX)</h1>
+        <fieldset id="detail">
+            <legend>Calculator (AJAX)</legend>  
+            <br>
+            
+            <label class="formlabel" for="Operand1">Operand 1: </label>
+            <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15"
+                    data-rule-required="true"  data-msg-required="Operand 1 is Required" 
+                    data-rule-number="true" data-msg-number="Operand 1 must be a Number">
+            <label for="Operand1" class="error" id="Operand1Msg"></label>
+            <br><br>
+
+            <label class="formlabel">Operator: </label>
+                <label for="fCentimetersOperator">
+                    <input type="radio" name="fOperator" id="fCentimetersOperator" value = "cm"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimeters
+                </label>
+                <label for="fMetersOperator">
+                    <input type="radio" name="fOperator" id="fMetersOperator" value = "m">Meters
+                </label>
+                <label for="fKilometersOperator">
+                    <input type="radio" name="fOperator" id="fKilometersOperator" value = "km">Kilometers
+                </label>
+                <label for="fInchesOperator">
+                    <input type="radio" name="fOperator" id="fInchesOperator" value = "in">Inches
+                </label>
+                <label for="fFeetOperator">
+                    <input type="radio" name="fOperator" id="fFeetOperator" value = "ft">Feet
+                </label>
+                <label for="fYardsOperator">
+                    <input type="radio" name="fOperator" id="fYardsOperator" value = "yd">Yards
+                </label>
+                <label for="fMilesOperator">
+                    <input type="radio" name="fOperator" id="fMilesOperator" value = "mi">Miles
+                </label>
+
+
+            <label for="Operator" class="error" id="OperatorMsg"></label>
+            <br><br>
+
+            <label class="formlabel">To Unit: </label>
+                <label for="tCentimetersOperator">
+                    <input type="radio" name="tOperator" id="tCentimetersOperator" value = "cm"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimeters
+                </label>
+                <label for="tMetersOperator">
+                    <input type="radio" name="tOperator" id="tMetersOperator" value = "m">Meters
+                </label>
+                <label for="tKilometersOperator">
+                    <input type="radio" name="tOperator" id="tKilometersOperator" value = "km">Kilometers
+                </label>
+                <label for="tInchesOperator">
+                    <input type="radio" name="tOperator" id="tInchesOperator" value = "in">Inches
+                </label>
+                <label for="tFeetOperator">
+                    <input type="radio" name="tOperator" id="tFeetOperator" value = "ft">Feet
+                </label>
+                <label for="tYardsOperator">
+                    <input type="radio" name="tOperator" id="tYardsOperator" value = "yd">Yards
+                </label>
+                <label for="tMilesOperator">
+                    <input type="radio" name="tOperator" id="tMilesOperator" value = "mi">Miles
+                </label>
+                <label for="Operator" class="error" id="OperatorError"></label>
+    
+            <label for="Operand2" class="error" id="Operand2Msg"></label>
+            <br><br>
+
+            <label class="formlabel">Result: </label>
+            <span id="Result"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();">
+
+        </fieldset>
+    </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/javascript/unitconversion.js"></script>
+</body>
+</html>

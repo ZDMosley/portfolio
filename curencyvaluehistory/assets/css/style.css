@@ -1,0 +1,19 @@
+.formlabel {
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    padding-left: 5px;
+}
+
+h1{
+    color:rgb(135, 222, 218);
+}
+
+border{
+  border-style:double;
+}
